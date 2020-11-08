@@ -2,7 +2,7 @@ package com.stylefeng.guns.modular.system.controller;
 
 import com.baomidou.mybatisplus.mapper.SqlRunner;
 import com.baomidou.mybatisplus.plugins.Page;
-import com.stylefeng.guns.api.base.controller.BaseController;
+import com.stylefeng.guns.core.base.controller.BaseController;
 import com.stylefeng.guns.api.common.annotion.BussinessLog;
 import com.stylefeng.guns.api.common.annotion.Permission;
 import com.stylefeng.guns.api.common.constant.Const;

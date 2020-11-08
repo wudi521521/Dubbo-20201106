@@ -1,8 +1,8 @@
 package com.stylefeng.guns.api.tag;
 
 import com.stylefeng.guns.api.common.exception.BizExceptionEnum;
-import com.stylefeng.guns.api.exception.GunsException;
-import com.stylefeng.guns.api.util.ToolUtil;
+import com.stylefeng.guns.core.exception.GunsException;
+import com.stylefeng.guns.core.util.ToolUtil;
 import com.stylefeng.guns.modular.system.model.Dict;
 import com.stylefeng.guns.modular.system.service.IDictService;
 import org.beetl.core.Tag;

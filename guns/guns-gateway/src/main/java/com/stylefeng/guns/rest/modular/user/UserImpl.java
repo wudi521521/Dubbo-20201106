@@ -9,8 +9,8 @@ import org.springframework.stereotype.Component;
  * @Description:
  * @date 2020/11/8 17:16
  */
-@Component
-@Service(interfaceClass = UserApi.class)
+/*@Component
+@Service(interfaceClass = UserApi.class)*/
 public class UserImpl implements UserApi {
     @Override
     public boolean login(String username, String password) {

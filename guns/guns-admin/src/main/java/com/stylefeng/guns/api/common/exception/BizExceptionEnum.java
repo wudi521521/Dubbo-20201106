@@ -1,6 +1,6 @@
 package com.stylefeng.guns.api.common.exception;
 
-import com.stylefeng.guns.api.exception.ServiceExceptionEnum;
+import com.stylefeng.guns.core.exception.ServiceExceptionEnum;
 
 /**
  * @Description 所有业务异常的枚举
