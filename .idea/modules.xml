@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Dubbo-20201106.iml" filepath="$PROJECT_DIR$/.idea/Dubbo-20201106.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-dubbo/consumer/bdubbo-consumer.iml" filepath="$PROJECT_DIR$/springboot-dubbo/consumer/bdubbo-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-dubbo/provider/bdubbo-provider.iml" filepath="$PROJECT_DIR$/springboot-dubbo/provider/bdubbo-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-consumer/dubbo-consumer.iml" filepath="$PROJECT_DIR$/dubbo-consumer/dubbo-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-dubbo/consumer/dubbo-consumer (1) (com.wudi.springboot.dubbo).iml" filepath="$PROJECT_DIR$/springboot-dubbo/consumer/dubbo-consumer (1) (com.wudi.springboot.dubbo).iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-provider/dubbo-provider.iml" filepath="$PROJECT_DIR$/dubbo-provider/dubbo-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guns/guns-admin/guns-admin.iml" filepath="$PROJECT_DIR$/guns/guns-admin/guns-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guns/guns-api/guns-api.iml" filepath="$PROJECT_DIR$/guns/guns-api/guns-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guns/guns-core/guns-core.iml" filepath="$PROJECT_DIR$/guns/guns-core/guns-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guns/guns-gateway/guns-gateway.iml" filepath="$PROJECT_DIR$/guns/guns-gateway/guns-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guns/guns-generator/guns-generator.iml" filepath="$PROJECT_DIR$/guns/guns-generator/guns-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guns/guns-parent.iml" filepath="$PROJECT_DIR$/guns/guns-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guns/guns-rest/guns-rest.iml" filepath="$PROJECT_DIR$/guns/guns-rest/guns-rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-dubbo/springboot-dubbo.iml" filepath="$PROJECT_DIR$/springboot-dubbo/springboot-dubbo.iml" />
+    </modules>
+  </component>
+</project>
