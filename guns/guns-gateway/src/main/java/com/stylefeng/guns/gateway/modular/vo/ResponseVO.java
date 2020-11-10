@@ -38,6 +38,19 @@ public class ResponseVO<M> {
 
         return responseVO;
      }
+    /**
+     * 成功
+     * @param msg
+     * @param <M>
+     * @return
+     */
+    public static<M> ResponseVO success(String msg){
+        ResponseVO responseVO = new ResponseVO();
+        responseVO.setStatus(0);
+        responseVO.setMsg(msg);
+
+        return responseVO;
+    }
 
     /**
      * 业务异常

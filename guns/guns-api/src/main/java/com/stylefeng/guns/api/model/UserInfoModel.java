@@ -60,4 +60,6 @@ public class UserInfoModel {
      */
     private long updateTime;
 
+    private int uuid;
+
 }

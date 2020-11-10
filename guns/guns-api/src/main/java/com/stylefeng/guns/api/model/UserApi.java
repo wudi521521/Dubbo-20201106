@@ -19,7 +19,7 @@ public interface UserApi {
      * 注册
      * @return
      */
-    boolean register();
+    boolean register(UserModel userModel);
 
     /**
      * 判断用户是否存在
