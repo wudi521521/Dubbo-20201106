@@ -2,6 +2,7 @@ package com.stylefeng.guns.user.modular.user;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.stylefeng.guns.api.model.UserApi;
+import com.stylefeng.guns.api.model.UserInfoModel;
 import org.springframework.stereotype.Component;
 
 /**
@@ -13,8 +14,28 @@ import org.springframework.stereotype.Component;
 @Service(interfaceClass = UserApi.class)
 public class UserImpl implements UserApi {
     @Override
-    public boolean login(String username, String password) {
+    public int login(String username, String password) {
         System.out.println("guns-user:"+username+"____"+password);
+        return 3;
+    }
+
+    @Override
+    public boolean register() {
         return false;
+    }
+
+    @Override
+    public boolean checkUsername(String name) {
+        return false;
+    }
+
+    @Override
+    public UserInfoModel getUserInfo(int uuid) {
+        return null;
+    }
+
+    @Override
+    public UserInfoModel updateUserInfo(UserInfoModel userInfoModel) {
+        return null;
     }
 }
