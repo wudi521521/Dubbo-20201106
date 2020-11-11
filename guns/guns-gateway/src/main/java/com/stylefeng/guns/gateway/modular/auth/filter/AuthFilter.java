@@ -11,6 +11,7 @@ import io.jsonwebtoken.JwtException;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.CollectionUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import javax.servlet.FilterChain;
@@ -18,6 +19,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.Collections;
 
 /**
  * 对客户端请求的jwt token验证过滤器
@@ -37,9 +40,32 @@ public class AuthFilter extends OncePerRequestFilter {
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain) throws IOException, ServletException {
+         //授权列表--》放行
         if (request.getServletPath().equals("/" + jwtProperties.getAuthPath())) {
             chain.doFilter(request, response);
             return;
+        }
+        //配置忽略列表--》放行
+        String ignoreUrl = jwtProperties.getIgnoreUrl();
+        if (null !=ignoreUrl){
+            String[] ignoreUrls = ignoreUrl.split(",");
+            /*Arrays.stream(ignoreUrls).forEach(item->{
+                if (request.getServletPath().equals(item)){
+                    try {
+                        //允许放行
+                        chain.doFilter(request,response);
+                        return;
+                    }catch (Exception e){}
+
+                }
+            });*/
+            for (int i=0;i<ignoreUrls.length;i++){
+                if (request.getServletPath().equals(ignoreUrls[i])){
+                    //允许放行
+                    chain.doFilter(request,response);
+                    return;
+                }
+            }
         }
         final String requestHeader = request.getHeader(jwtProperties.getHeader());
         String authToken = null;

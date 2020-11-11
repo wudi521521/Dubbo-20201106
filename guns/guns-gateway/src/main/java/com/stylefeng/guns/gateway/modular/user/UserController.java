@@ -21,8 +21,8 @@ import java.util.Objects;
 @RequestMapping("/user")
 @RestController
 public class UserController {
-
-    @Reference(interfaceClass = UserApi.class)
+    //check=false 开启时不校验引用服务
+    @Reference(interfaceClass = UserApi.class,check = false)
     private UserApi userApi;
 
     /**

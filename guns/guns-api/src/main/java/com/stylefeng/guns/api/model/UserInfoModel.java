@@ -2,13 +2,15 @@ package com.stylefeng.guns.api.model;
 
 import lombok.Data;
 
+import java.io.Serializable;
+
 /**
  * @author Dillon Wu
  * @Description:
  * @date 2020/11/9 16:15
  */
 @Data
-public class UserInfoModel {
+public class UserInfoModel implements Serializable {
 
     /**
      * 用户名称

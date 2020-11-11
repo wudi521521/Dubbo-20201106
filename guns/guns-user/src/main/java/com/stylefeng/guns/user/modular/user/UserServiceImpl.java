@@ -22,7 +22,7 @@ import java.util.Objects;
  */
 @Slf4j
 @Component
-@Service(interfaceClass = UserApi.class)
+@Service(interfaceClass = UserApi.class,loadbalance = "roundrobin")//指定为轮询模式
 public class UserServiceImpl implements UserApi {
 
     @Autowired

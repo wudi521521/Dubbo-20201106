@@ -30,8 +30,8 @@ public class AuthController {
 
     /*@Resource(name = "simpleValidator")
     private IReqValidator reqValidator;*/
-
-    @Reference(interfaceClass = UserApi.class)
+    //check=false 开启时不校验引用服务
+    @Reference(interfaceClass = UserApi.class,check = false)
     private UserApi userApi;
 
     @RequestMapping(value = "${jwt.auth-path}")

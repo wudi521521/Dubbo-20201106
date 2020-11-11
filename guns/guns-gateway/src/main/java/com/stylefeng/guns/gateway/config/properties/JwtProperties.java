@@ -1,5 +1,6 @@
 package com.stylefeng.guns.gateway.config.properties;
 
+import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
@@ -9,6 +10,7 @@ import org.springframework.context.annotation.Configuration;
  * @author fengshuonan
  * @date 2017-08-23 9:23
  */
+
 @Configuration
 @ConfigurationProperties(prefix = JwtProperties.JWT_PREFIX)
 public class JwtProperties {
@@ -24,6 +26,16 @@ public class JwtProperties {
     private String authPath = "auth";
 
     private String md5Key = "randomKey";
+
+    public String getIgnoreUrl() {
+        return ignoreUrl;
+    }
+
+    public void setIgnoreUrl(String ignoreUrl) {
+        this.ignoreUrl = ignoreUrl;
+    }
+
+    private String ignoreUrl = "";
 
     public static String getJwtPrefix() {
         return JWT_PREFIX;
