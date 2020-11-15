@@ -23,6 +23,8 @@ public class ResponseVO<M> {
      * 返回实体
      */
     private M data;
+
+    private String imgPre;
     private ResponseVO(){}
 
     /**
@@ -38,6 +40,20 @@ public class ResponseVO<M> {
 
         return responseVO;
      }
+    /**
+     * 成功
+     * @param m
+     * @param <M>
+     * @return
+     */
+    public static<M> ResponseVO success(String imgPre,M m){
+        ResponseVO responseVO = new ResponseVO();
+        responseVO.setStatus(0);
+        responseVO.setData(m);
+        responseVO.setImgPre(imgPre);
+
+        return responseVO;
+    }
     /**
      * 成功
      * @param msg
